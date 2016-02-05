@@ -1,0 +1,30 @@
+I use python as my programming language for this task with the help of re,beautifulsoup,time libraries. 
+In BFS crawling I start at a seed link and use a list to store all the urls. First check the children 
+urls of the seed link and check whether the keyword in the urls or not. if it in the urls I added it 
+into this list and if not I check whether the keyword is in the anchor text or not if yes,added it into the list,
+if not keep check whether the keyword in the text of the raw html. and everytime I append 
+the urls to the end of the list and pop the first url in the list. the list work as a queue,
+and implementing first in first out bfs crawling. In BFS crawling I totally crawled 2883 urls.
+
+In DFS crawling I use a data structure tuple to store the url depth information of the url. and when I crawled a 
+url I always appended it in the head of the list and everytime I pop the head of the list, the list work as a stack,
+last in first out.And then When traverse the urls always depth first. In DFS crawling I totally crawled about 5000 urls.
+
+The result of BFS,the first one is the seed url and the next few urls are all the children urls of the seed url, because 
+BFS implemented. In the mean Time look at the result of DFS urls, the first url is the seed link and the second one is the 
+children url of the first one,and the third url is the children urls of the second one.
+
+The first five urls in BFS crawling:
+1 http://en.wikipedia.org/wiki/Sustainable_energy
+2 http://en.wikipedia.org/wiki/Energy_conservation
+3 http://en.wikipedia.org/wiki/Cogeneration
+4 http://en.wikipedia.org/wiki/Efficient_energy_use
+5 http://en.wikipedia.org/wiki/Geothermal_heat_pump
+
+the fist five urls in DFS crawling:
+1 http://en.wikipedia.org/wiki/Sustainable_energy
+2 http://en.wikipedia.org/wiki/Outline_of_sustainability
+3 http://en.wikipedia.org/wiki/Glossary_of_environmental_science
+4 http://en.wikipedia.org/wiki/Urban_ecology
+5 http://en.wikipedia.org/wiki/Non-renewable_resource
+
